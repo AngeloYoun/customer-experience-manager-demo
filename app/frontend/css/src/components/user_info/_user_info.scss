@@ -1,0 +1,39 @@
+.user-info-container {
+	display: flex;
+
+	&.large {
+		.name {
+			font-size: 16px;
+		}
+
+		.secondary {
+			font-size: 14px;
+		}
+	}
+
+	.avatar-container {
+		margin-right: 16px;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	.name, .sub-header {
+		@include overflowEllipsis;
+
+		line-height: 1.1em;
+	}
+
+	.name {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.secondary {
+		font-weight: $fontWeightHeavy;
+		margin-top: 8px;
+	}
+}

@@ -1,0 +1,11 @@
+.user-list-modal-container {
+	height: 60vh;
+	max-height: 640px;
+	overflow-y: auto;
+	padding: 32px 40px;
+	width: 480px;
+
+	.user-info-container:not(:last-child) {
+		margin-bottom: 32px;
+	}
+}

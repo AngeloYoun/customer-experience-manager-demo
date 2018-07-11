@@ -1,0 +1,60 @@
+.avatar-container {
+	height: 32px;
+	position: relative;
+	width: 32px;
+	background-color: $colorCoolWhite;
+	border-radius: 100%;
+	box-sizing: border-box;
+
+	&.on-dark .avatar {
+		box-sizing: content-box;
+		border: 2px solid $colorWhite;
+		margin: -2px;
+	}
+
+	.avatar {
+		background-color: transparent;
+		background-position: 50% 50%;
+		background-size: cover;
+		border-radius: 100%;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.avatar-content {
+		color: $colorCoolGrey;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.badge {
+		animation: scaleUp 0.1s 0.1s ease-out;
+		background-color: $colorWhite;
+		border: 2px solid $colorWhite;
+		border-radius: 50%;
+		box-sizing: border-box;
+		height: 24px;
+		position: absolute;
+		right: -8px;
+		top: -12px;
+		width: 24px;
+	}
+
+	.liferay-logo-icon {
+		background-color: $colorWhite;
+		border-radius: 2px;
+		border: 1px solid $colorWhite;
+		bottom: -4px;
+		height: 50%;
+		position: absolute;
+		right: -4px;
+		width: 50%;
+		max-height: 16px;
+		max-width: 16px;
+	}
+}

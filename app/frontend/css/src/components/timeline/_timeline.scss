@@ -1,0 +1,123 @@
+.timeline-container {
+	$_colorSubscriptionRange: #B7D4E8;
+	$_zIndexBase: 0;
+	$_zIndexOverlay: 100;
+	$_zIndexUnderlay: -100;
+
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	&.panning {
+		.translate-container {
+			transition: transform 0.15s ease-out;
+		}
+	}
+
+	&.set-view {
+		.activity-point-container {
+			transition: transform 0.25s ease-out, left 0.5s ease-out;
+		}
+
+		.items, .timeline-svg {
+			transition: width 0.5s ease-out;
+		}
+
+		.today-marker {
+			transition: transform 0.5s ease-out;
+		}
+
+		.translate-container {
+			transition: transform 0.5s ease-out;
+		}
+	}
+
+	&.pan-enabled {
+		cursor: -webkit-grab;
+	}
+
+	&.panning {
+		cursor: -webkit-grabbing;
+		transition: transform 0.15s ease-out;
+	}
+
+	.align-right {
+		.label, .sub-label {
+			text-align: right;
+		}
+	}
+
+
+	.label, .sub-label {
+		background-color: rgba($colorWhite, 0.8);
+		float: left;
+	}
+
+	.label {
+		font-weight: $fontWeightHeavy;
+		line-height: 1em;
+		margin-bottom: 8px;
+		width: auto;
+	}
+
+	.new-deal-label {
+		align-items: flex-start;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		white-space: nowrap;
+		width: 1px;
+
+		&.flipped {
+			align-items: flex-end;
+			text-align: left;
+		}
+
+		.value {
+			padding: 8px 8px 0;
+		}
+	}
+
+	.new-deal-point {
+		.vis-box {
+			padding: 0 4px;
+		}
+
+		.vis-item-content {
+			padding: 0;
+		}
+	}
+
+	.sub-label {
+		clear: both;
+		color: $colorMediumGrey;
+		width: auto;
+	}
+
+	.timeline-svg {
+		height: 56px;
+		overflow: visible;
+	}
+
+	.today-marker {
+		animation: fadeIn 0.25s ease-in;
+		position: absolute;
+		top: 0;
+		width: 1px;
+		background-color: $colorDeepBlue;
+		padding-bottom: 72px;
+	}
+
+	.today-label {
+		top: 0;
+		color: $colorDeepBlue;
+		font-weight: $fontWeightHeavy;
+		left: 8px;
+		position: absolute;
+	}
+
+	.translate-container {
+		height: 100%;
+	}
+}

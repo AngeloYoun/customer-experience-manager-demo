@@ -1,0 +1,45 @@
+.account-activities-model-container {
+	.open-duration {
+		overflow: visible;
+		position: absolute;
+
+		.label {
+			font-size: 12px;
+			font-weight: $fontWeightHeavy;
+			fill: $colorCoolGrey;
+			text-anchor: end;
+		}
+
+		.guide {
+			stroke: transparentize($colorCoolGrey, 0.5);
+			stroke-dasharray: 7, 4;
+			stroke-width: 3px;
+		}
+	}
+
+	.subscription-term {
+		position: absolute;
+
+		&.neutral {
+			rect {
+				fill: transparentize($colorOppStatusOpen, 0.75);
+				stroke: $colorOppStatusOpen;
+				stroke-dasharray: 6, 4;
+			}
+		}
+
+		&.active {
+			rect {
+				fill: transparentize($colorDeepBlue, 0.75);
+				stroke: $colorDeepBlue;
+			}
+		}
+
+		rect {
+			fill: transparentize($colorCoolGrey, 0.75);
+			stroke: $colorCoolGrey;
+			rx: 2px;
+			transition: stroke 0.15s ease-out, fill 0.15s ease-out;
+		}
+	}
+}

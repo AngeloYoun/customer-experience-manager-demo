@@ -1,0 +1,81 @@
+.account-index-list-container {
+	$_headingHeight: 323px;
+
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - #{$globalHeaderHeight});
+
+	.filter {
+		align-items: center;
+		display: flex;
+		position: relative;
+		width: 100%;
+
+		& > .text-input {
+			font-size: 16px;
+			font-weight: normal;
+			height: 40px;
+			padding-left: 48px;
+			width: 100%;
+		}
+	}
+
+	.list-container {
+		box-sizing: border-box;
+		overflow-y: auto;
+		padding: 8px calc(#{$globalHorizontalMargin} - 24px);
+
+		& > *:last-child {
+			margin-bottom: 16px;
+		}
+	}
+
+	.list-controls {
+		display: flex;
+		flex: 0 0 auto;
+		justify-content: space-between;
+		margin: 0 $globalHorizontalMargin 24px;
+	}
+
+	.list-header {
+		align-items: flex-start;
+		flex: 0 0 auto;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.list-search {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin: 32px $globalHorizontalMargin 24px;
+		position: relative;
+	}
+
+	.load-more-button {
+		background-color: $colorWhite;
+		border: 1px solid $colorSubtleGrey;
+		border-radius: 6px;
+		color: $colorCoolGrey;
+		height: 64px;
+		width: 100%;
+
+		&:hover, &.selected {
+			background-color: $colorCoolWhite;
+			border-color: $colorCoolGrey;
+		}
+	}
+
+	.results-count, .sort {
+		color: $colorCoolGrey;
+		font-weight: normal;
+	}
+
+	.search-icon {
+		fill: $colorCoolGrey;
+		height: 100%;
+		left: 16px;
+		position: absolute;
+		top: 0;
+	}
+}

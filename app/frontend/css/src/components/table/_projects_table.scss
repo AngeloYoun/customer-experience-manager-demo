@@ -1,0 +1,42 @@
+.projects-table-container {
+	.column-name {
+		width: 40%;
+	}
+
+	.column-partner {
+		width: 15%;
+	}
+
+	.column-product {
+		width: 10%;
+	}
+
+	.column-status {
+		width: 10%;
+	}
+
+	.column-subscription-term {
+		width: 15%;
+	}
+
+	.column-support-region {
+		width: 10%;
+	}
+
+	.liferay-features-used {
+		color: $colorMediumGrey;
+		letter-spacing: 0.05em;
+	}
+
+	.liferay-version {
+		color: $colorDarkNavy;
+		display: inline-flex;
+		font-weight: $fontWeightHeavy;
+	}
+
+	.subscription-level {
+		align-items: center;
+		display: inline-flex;
+		margin-left: 16px;
+	}
+}

@@ -1,0 +1,62 @@
+.account-index-entry-container {
+	animation: fadeIn 0.1s ease-out backwards;
+	background-color: $colorWhite;
+	border-bottom: 1px solid $colorSubtleGrey;
+	height: 104px;
+	margin-bottom: 8px;
+	padding: 0 24px;
+
+	&:hover, &.selected {
+		box-shadow: $boxShadowRaised;
+		transform: translateY(-3px);
+		transition: box-shadow 0.1s ease-in, transform 0.1s ease-in;
+	}
+
+	&.selected {
+		border: 1px solid $colorSubtleGrey;
+	}
+
+	.account-info, .account-title {
+		padding: 24px 0;
+	}
+
+	.account-info {
+		display: flex;
+		flex-basis: 60%;
+		justify-content: flex-end;
+	}
+
+	.account-name {
+		margin-bottom: 16px;
+
+		@include overflowEllipsis;
+	}
+
+	.account-title {
+		flex-basis: 40%;
+		overflow: hidden;
+	}
+
+	.active-subscription {
+		align-items: center;
+		display: flex;
+		margin-right: 40px;
+	}
+
+	.industry {
+		width: 184px;
+	}
+
+	.info-item {
+		margin-left: 24px;
+	}
+
+	.last-modified {
+		width: 96px;
+	}
+
+	.link {
+		display: flex;
+		justify-content: space-between;
+	}
+}

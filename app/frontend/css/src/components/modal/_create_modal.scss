@@ -1,0 +1,95 @@
+.create-modal-container {
+	.create-container {
+		@include customScrollBar;
+
+		padding: 24px 40px 40px;
+		max-height: 480px;
+		overflow: auto;
+	}
+
+	&.modal-container {
+		.modal {
+			margin-top: 40px;
+		}
+	}
+
+	.modal {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.type {
+		margin: 0 -8px;
+
+		.option.selected {
+			display: none;
+		}
+
+		.value {
+			font-weight: $fontWeightHeavy;
+			padding: 8px 0;
+		}
+	}
+
+	.title .value {
+		text-transform: capitalize;
+	}
+
+	.related-project {
+		.option {
+			padding: 16px;
+		}
+	}
+
+	.related-opportunity, .related-project {
+		height: auto;
+		width: 360px;
+
+		.option {
+			padding: 0;
+
+			& > a {
+				pointer-events: none;
+			}
+		}
+
+		.options .selected.option {
+			display: none;
+		}
+
+		.opportunity-card-container, .project-card-container {
+			margin: 0;
+			border-width: 0;
+			width: 320px;
+		}
+	}
+
+	.input-label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 8px;
+	}
+
+	.input-group {
+		margin-bottom: 24px;
+	}
+
+	.footer {
+		padding: 8px 40px;
+		border-top: 1px solid transparentize($colorCoolGrey, 0.6);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.cancel-button, .save-button {
+		width: 104px;
+		height: 40px;
+		margin-left: 24px;
+	}
+
+	.loading-spinner-container {
+		width: 104px;
+		height: 40px;
+	}
+}

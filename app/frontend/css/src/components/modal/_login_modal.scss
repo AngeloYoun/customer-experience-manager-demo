@@ -1,0 +1,81 @@
+.login-modal-container {
+	&.login-failed {
+		.login-button {
+			animation: negativeShake 0.35s ease-in-out both;
+
+			&:not(.disabled) {
+				border-color: $colorNegativeRed;
+
+				.label {
+					color: $colorNegativeRed;
+				}
+			}
+		}
+	}
+
+	&.login-success {
+		@include animateDossieraLogo(3.4, 1);
+
+		&.modal-container .modal {
+			border-color: $colorPositiveGreen;
+		}
+
+		.login-button:not(.disabled) {
+			border-color: $colorPositiveGreen;
+
+			.label {
+				color: $colorPositiveGreen;
+			}
+		}
+	}
+
+	&.modal-container .modal {
+		border: 1px solid $colorDeepBlue;
+		box-sizing: border-box;
+		padding: 24px 64px;
+		position: relative;
+		transition: border-color 0.3s ease-out;
+		width: 400px;
+	}
+
+	.dossiera-logo-icon {
+		height: 40px;
+		width: auto;
+	}
+
+	.failed-attempt-warning {
+		color: $colorNegativeRed;
+		margin-bottom: 24px;
+	}
+
+	.input-label {
+		color: $colorCoolGrey;
+	}
+
+	.login-button {
+		align-items: center;
+		display: flex;
+		height: 48px;
+		justify-content: center;
+		margin: 32px 0 16px;
+		transition: border-color 0.2s ease-out, color 0.2s ease-out;
+		width: 100%;
+
+		.label {
+			animation: fadeIn 0.2s ease-out both;
+		}
+	}
+
+	.failed-attempt-warning, .login-success-message, .session-timeout-message {
+		animation: fadeIn 0.2s ease-out both;
+	}
+
+	.login-success-message, .session-timeout-message {
+		line-height: 1.8em;
+		margin: 24px 0;
+	}
+
+	.text-input-container {
+		margin: 8px 0 24px;
+	}
+}

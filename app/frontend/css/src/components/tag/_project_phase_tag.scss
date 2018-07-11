@@ -1,0 +1,32 @@
+.project-phase-tag-container {
+	align-items: center;
+	display: flex;
+	height: 24px;
+	justify-content: center;
+	width: 88px;
+
+	&.development {
+		background-color: $colorBrightBlue;
+	}
+
+	&.discontinued {
+		background-color: $colorNegativeRed;
+	}
+
+	&.live {
+		background-color: $colorPositiveGreen;
+	}
+
+	&.no-status {
+		background-color: $colorNeutralLavendar;
+
+		.project-phase-label {
+			color: $colorDarkNavy;
+		}
+	}
+
+	.project-phase-label {
+		color: $colorWhite;
+		letter-spacing: 0.02em;
+	}
+}

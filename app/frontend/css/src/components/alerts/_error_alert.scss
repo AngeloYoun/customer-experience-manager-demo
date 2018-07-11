@@ -1,0 +1,62 @@
+.error-alert-container {
+	.action-button-container {
+		height: 32px;
+		width: 104px;
+	}
+
+	.alert-message {
+		margin-bottom: 16px;
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.error {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 16px;
+	}
+
+	.error-count {
+		color: $colorNegativeRed;
+		display: inline;
+		font-weight: $fontWeightBlack;
+	}
+
+	.error-count-message {
+		color: $colorNegativeRed;
+		line-height: 1.1em;
+	}
+
+	.error-details {
+		background-color: transparentize($colorNegativeRed, 0.97);
+		border: $colorNegativeRed 1px solid;
+		border-radius: 4px;
+		line-height: 1.2em;
+		margin-bottom: 16px;
+		max-height: 200px;
+		overflow: auto;
+		padding: 8px;
+		transform-origin: top;
+		white-space: pre-wrap;
+	}
+
+	.error-messages {
+		color: $colorNegativeRed;
+		font-family: $fontFamilyMonospace;
+		font-weight: $fontWeightBlack;
+	}
+
+	.show-details {
+		color: $colorCoolGrey;
+		cursor: pointer;
+		transition: color 0.15s ease-out;
+
+		&:hover {
+			color: $colorDarkNavy;
+		}
+	}
+}

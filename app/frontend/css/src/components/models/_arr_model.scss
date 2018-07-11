@@ -1,0 +1,92 @@
+.arr-model-container {
+	$_zIndexUnderlay: -200;
+
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+
+	.arr-tooltip {
+		position: absolute;
+		z-index: 50;
+		bottom: 0px;
+		border-left: 1px dashed $colorBrightBlue;
+		width: 1px;
+		pointer-events: none;
+
+		.arr-marker {
+			background: $colorWhite;
+			border-radius: 100%;
+			border: 2px solid $colorBrightBlue;
+			bottom: -6px;
+			height: 8px;
+			left: -6px;
+			position: absolute;
+			transition: transform 0.04s ease-out;
+			width: 8px;
+		}
+
+		.label {
+			background: transparent;
+			bottom: 0;
+			left: 8px;
+			margin: 0;
+			position: absolute;
+			white-space: pre;
+		}
+
+		.tooltip-label {
+			color: $colorCoolGrey;
+			margin-bottom: 2px;
+		}
+
+		.arr-amount {
+			font-weight: $fontWeightHeavy;
+		}
+	}
+
+	.arr-model-svg {
+		position: absolute;
+		bottom: 0;
+		overflow: visible;
+	}
+
+	.account-arr {
+		opacity: 0.3;
+	}
+
+	.fill {
+		fill: #E8FAFF;
+	}
+
+	.line {
+		fill: none;
+		stroke: transparentize($colorBrightBlue, 0.2);
+		stroke-width: 2px;
+	}
+
+	.projected-revenue.line {
+		stroke-dasharray: 8, 5;
+	}
+
+	.todays-arr {
+		bottom: -4px;
+		left: 8px;
+		position: absolute;
+		opacity: 1;
+		transition: opacity 0.15s 0.1s ease-out;
+
+		&.hide {
+			opacity: 0;
+		}
+	}
+
+	.todays-arr-amount, .todays-arr-label {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.todays-arr-label {
+		margin-bottom: 4px;
+	}
+}

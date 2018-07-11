@@ -1,0 +1,51 @@
+.collapsable-container {
+	margin-bottom: 16px;
+
+	.header {
+		align-items: center;
+		border-bottom: 1px solid transparentize($colorCoolGrey, 0.25);
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		padding: 8px 0;
+		transition: border-bottom-color 0.15s ease-out;
+
+		&:hover {
+			border-bottom-color: $colorCoolGrey;
+
+			.collapse-icon {
+				.caret-up-icon, .caret-down-icon {
+					fill: $colorDarkNavy;
+				}
+			}
+		}
+	}
+
+	.title {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.collapse-icon {
+		.caret-up-icon, .caret-down-icon {
+			fill: transparentize($colorCoolGrey, 0.25);
+			transition: fill 0.15s ease-out;
+		}
+	}
+
+	.collapse-group {
+		@include customScrollBar;
+
+		margin-top: 16px;
+		max-height: 560px;
+		opacity: 1;
+		overflow: auto;
+		transition: max-height 0.15s ease-out, margin-top 0.15s ease-out, opacity 0.15s ease-out;
+
+		&.collapsed {
+			margin-top: 0;
+			max-height: 0;
+			opacity: 0;
+			transition: max-height 0.15s ease-out, margin-top 0.15s 0.1s ease-out, opacity 0.15s ease-out;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.toggle-button-container {
+	border: 1px solid $colorCoolGrey;
+	border-radius: 4px;
+	color: $colorCoolGrey;
+	font-size: $fontSizeMedium;
+	font-weight: $fontWeightHeavy;
+	height: 32px;
+	text-align: center;
+	transition: background-color 0.2s ease-out, border-color 0.05s ease-out, color 0.05s ease-out;
+	width: 32px;
+
+	&:active, &:hover {
+		border-color: $colorDarkNavy;
+		color: $colorDarkNavy;
+	}
+
+	&.active {
+		background-color: $colorCoolWhite;
+	}
+}

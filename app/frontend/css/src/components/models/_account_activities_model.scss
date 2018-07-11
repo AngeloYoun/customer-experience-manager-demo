@@ -1,0 +1,115 @@
+.account-activities-model-container {
+	.relations {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.activity-point-container {
+		z-index: 100;
+	}
+
+	.relation-path {
+		stroke: $colorDeepBlue;
+		fill: none;
+		stroke-width: 1px;
+	}
+
+	.marker {
+		background-color: $colorCoolGrey;
+		height: 100%;
+		width: 1px;
+	}
+
+	.marker-label {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 8px;
+		white-space: nowrap;
+		width: 128px;
+
+		& > {
+			h1, h2, h3, h4, h5 {
+				@include overflowEllipsis;
+			}
+		}
+
+		.label {
+			margin-top: 8px;
+		}
+	}
+
+	.marker-label-text-primary {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+	}
+
+	.stage-label {
+		@include statusColors(color);
+
+		font-weight: $fontWeightBlack;
+	}
+
+	.account-activities-tooltip {
+		&.active {
+			opacity: 1;
+			pointer-events: initial;
+			transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+		}
+
+		border-radius: 4px;
+		border: 1px solid transparentize($colorCoolGrey, 0.5);
+		pointer-events: none;
+		opacity: 0;
+		width: 320px;
+		height: auto;
+		background-color: #FFF;
+		box-shadow: $boxShadowMedium;
+		padding: 8px 16px;
+		top: -32px;
+		left: 32px;
+		transition: transform 0.15s ease-out, opacity 0.15s 0.1s ease-out;
+		z-index: $zIndexAccountOverviewTooltip;
+
+		.tooltip-content {
+			.status {
+				@include statusColors(color);
+
+				font-weight: $fontWeightHeavy;
+				margin-bottom: 8px;
+			}
+
+			.summary {
+				margin-bottom: 8px;
+				font-weight: $fontWeightHeavy;
+			}
+
+			.meta {
+				display: flex;
+				margin-bottom: 12px;
+			}
+
+			.amount, .component {
+				color: $colorDarkNavy;
+				font-weight: $fontWeightRegular;
+			}
+
+			.component {
+				margin-left: 8px;
+			}
+
+			.type {
+				margin-bottom: 4px;
+			}
+		}
+	}
+}
+
+.timeline-container.zooming {
+	.account-activities-tooltip {
+		opacity: 0;
+		transition: opacity 0.15s ease-out;;
+	}
+}

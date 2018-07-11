@@ -1,0 +1,8 @@
+.alerts-handler-container {
+	.alerts-list {
+		position: fixed;
+		right: 24px;
+		top: 24px;
+		z-index: $zIndexAlerts;
+	}
+}

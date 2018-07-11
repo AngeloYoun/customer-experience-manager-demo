@@ -1,0 +1,41 @@
+.account-card-container {
+	align-items: flex-start;
+	border: 1px solid transparentize($colorCoolGrey, 0.5);
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 16px;
+	transition: border-color 0.25s ease-out;
+	width: 100%;
+
+	&:hover {
+		border-color: $colorDarkNavy;
+	}
+
+	.name {
+		align-items: center;
+		display: flex;
+		font-weight: $fontWeightHeavy;
+		margin: -4px 0 8px;
+
+		.account-avatar {
+			border: 1px solid #D1E0E7;
+			border-radius: 100%;
+			margin-right: 8px;
+			height: 24px;
+			width: 24px;
+		}
+	}
+
+	.info {
+		display: flex;
+		margin-bottom: 8px;
+	}
+
+	.inline-info-container {
+		margin-right: 8px;
+		font-weight: $fontWeightRegular;
+		color: $colorDarkNavy;
+	}
+}

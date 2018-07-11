@@ -1,0 +1,37 @@
+.transition-in .opportunity-timeline-container .vis-itemset {
+	animation: fadeIn 0.15s ease-out both;
+}
+
+.opportunity-timeline-container {
+	.event-group {
+		z-index: 100;
+	}
+
+	.opportunity-group {
+		z-index: 200;
+	}
+
+	.revenue-group {
+		z-index: 0;
+	}
+
+	.tooltip-container.left {
+		left: 56px;
+	}
+
+	.vis-left {
+		.vis-label {
+			&.event-group .vis-inner {
+				height: 32px;
+			}
+
+			&.opportunity-group .vis-inner {
+				height: 312px;
+			}
+
+			&.revenue-group .vis-inner {
+				height: 0;
+			}
+		}
+	}
+}

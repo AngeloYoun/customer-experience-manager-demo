@@ -1,0 +1,17 @@
+.placeholder-message-container {
+	align-items: center;
+	background-color: $colorCoolWhite;
+	border: 1px solid $colorSubtleGrey;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: flex;
+	height: 200px;
+	justify-content: center;
+	line-height: 1.6em;
+	padding: 32px;
+	width: 100%;
+
+	.placeholder-message {
+		color: $colorCoolGrey;
+	}
+}

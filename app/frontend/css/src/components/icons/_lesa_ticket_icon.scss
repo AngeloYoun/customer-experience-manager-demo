@@ -1,0 +1,19 @@
+.lesa-ticket-icon-container {
+	&.critical {
+		.ticket-icon {
+			fill: $colorLesaTicketCritical;
+		}
+	}
+
+	&.major {
+		.ticket-icon {
+			fill: $colorLesaTicketMajor;
+		}
+	}
+
+	&.minor {
+		.ticket-icon {
+			fill: $colorLesaTicketMinor;
+		}
+	}
+}

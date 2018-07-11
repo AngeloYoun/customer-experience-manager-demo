@@ -1,0 +1,288 @@
+[
+    {
+        "path": "/accounts/:accountId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/accounts/:accountId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/accounts",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/accounts",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/accounts",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/accounts/:accountId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+		"description": "Create a new Account",
+        "path": "/accounts",
+		"data": true,
+		"method": "POST"
+	},
+	{
+        "path": "/projects/:projectId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/projects/:projectId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/projects",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/projects",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/projects",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/projects/:projectId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+		"description": "Create a new Account",
+        "path": "/projects",
+		"data": true,
+		"method": "POST"
+	},
+	{
+        "path": "/opportunities/:opportunityId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/opportunities/:opportunityId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/opportunities",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/opportunities",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/opportunities",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/opportunities/:opportunityId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+		"description": "Create a new Account",
+        "path": "/opportunities",
+		"data": true,
+		"method": "POST"
+	},
+	{
+        "path": "/contacts/:contactId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/contacts/:contactId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/contacts",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/contacts",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/contacts",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/contacts/:contactId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/contacts",
+		"data": true,
+		"method": "POST"
+	},
+	{
+        "path": "/touchpoints/:touchpointId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/touchpoints/:touchpointId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/touchpoints",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/touchpoints",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/touchpoints",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/touchpoints/:touchpointId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+		"description": "Create a new Account",
+        "path": "/touchpoints",
+		"data": true,
+		"method": "POST"
+	},
+	{
+        "path": "/opportunity-line-items/:opportunityLineItemId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/opportunity-line-items/:opportunityLineItemId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/opportunity-line-items",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/opportunity-line-items",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/opportunity-line-items",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/opportunity-line-items/:opportunityLineItemId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/opportunity-line-items",
+		"data": true,
+		"method": "POST"
+	},
+	{
+        "path": "/lesa-tickets/:lesaTicketsId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/lesa-tickets/:lesaTicketsId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/lesa-tickets",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/lesa-tickets",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/lesa-tickets",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/lesa-tickets/:lesaTicketsId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+		"description": "Create a new Account",
+        "path": "/lesa-tickets",
+		"data": true,
+		"method": "POST"
+	},
+	{
+        "path": "/users/:usersId",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/users/:usersId",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/users",
+		"data": true,
+		"method": "GET"
+	},
+	{
+        "path": "/users",
+		"data": true,
+		"method": "DELETE"
+	},
+	{
+        "path": "/users",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+        "path": "/users/:usersId",
+		"data": true,
+		"method": "PATCH"
+	},
+	{
+		"description": "Create a new Account",
+        "path": "/users",
+		"data": true,
+		"method": "POST"
+	}
+]

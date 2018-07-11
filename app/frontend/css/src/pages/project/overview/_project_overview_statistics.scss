@@ -1,0 +1,33 @@
+.project-overview-statistics-container {
+	display: flex;
+
+	.info, .meta {
+		letter-spacing: 0.05em;
+	}
+
+	.info {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+		letter-spacing: 0.07em;
+		line-height: 1.4em;
+		margin-right: 16px;
+	}
+
+	.info-item {
+		margin-right: 64px;
+	}
+
+	.label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		letter-spacing: 0.08em;
+	}
+
+	.meta {
+		align-items: center;
+		color: $colorMediumGrey;
+		display: flex;
+		font-weight: $fontWeightRegular;
+		margin: 8px 0 0;
+	}
+}

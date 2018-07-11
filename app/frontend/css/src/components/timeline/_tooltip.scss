@@ -1,0 +1,14 @@
+.tooltip-container {
+	animation: fadeIn 0.1s ease-out both;
+	background-color: $colorWhite;
+	border: 1px solid $colorSubtleGrey;
+	box-shadow: $boxShadowMedium;
+	box-sizing: border-box;
+	height: auto;
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	width: auto;
+	z-index: $zIndexTooltip;
+}

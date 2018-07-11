@@ -1,0 +1,30 @@
+.account-overview-statistics-container {
+	display: inline-flex;
+	margin-bottom: 40px;
+	width: auto;
+
+	.info {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+		letter-spacing: 0.05em;
+		line-height: 1.4em;
+		margin-right: 16px;
+	}
+
+	.info-item {
+		margin-right: 64px;
+	}
+
+	.label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+	}
+
+	.meta {
+		align-items: center;
+		color: $colorMediumGrey;
+		display: flex;
+		font-weight: $fontWeightRegular;
+		margin: 8px 0 0;
+	}
+}

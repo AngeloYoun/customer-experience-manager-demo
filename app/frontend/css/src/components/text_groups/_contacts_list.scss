@@ -1,0 +1,30 @@
+.contacts-list-container {
+	.contact-entry {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 24px;
+	}
+
+	.contact-name {
+		color: $colorDarkNavy;
+		margin-bottom: 8px;
+	}
+
+	.contact-role {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.entry-title {
+		height: 32px;
+	}
+
+	.purchase-involvement {
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 8px;
+	}
+
+	.meta {
+		text-align: right;
+	}
+}

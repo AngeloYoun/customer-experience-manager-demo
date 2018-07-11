@@ -1,0 +1,82 @@
+.account-overview-timeline-filter {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	width: 100%;
+
+	.create-button {
+		height: 32px;
+		width: 104px;
+	}
+
+	.name {
+		@include overflowEllipsis;
+
+		font-weight: $fontWeightHeavy;
+		width: 200px;
+	}
+
+	.scope-filter {
+		height: 40px;
+		margin: 16px 0 0 -24px;
+		width: 320px;
+
+		.option.selected {
+			display: none;
+		}
+	}
+
+	.scope-filter-entry {
+		align-items: center;
+		display: flex;
+		padding: 8px 16px;
+		width: 100%;
+
+		.label {
+			font-weight: $fontWeightHeavy;
+			margin-right: 8px;
+		}
+	}
+
+	.open-activities {
+		display: flex;
+	}
+
+	.open-opportunities {
+		width: 150px;
+	}
+
+	.opportunities, .tickets {
+		display: flex;
+		align-items: center;
+		margin-top: 8px;
+	}
+
+	.opportunity, .ticket {
+		display: flex;
+		align-items: center;
+		margin-right: 8px;
+	}
+
+	.filter {
+		margin: 0 24px 0 auto;
+	}
+
+	.count {
+		margin-right: 4px;
+		font-weight: $fontWeightHeavy;
+		color: $colorDarkNavy;
+	}
+
+	.opportunity-icon-container, .lesa-ticket-icon-container {
+		height: 20px;
+		width: 20px;
+	}
+
+	.timeline-header {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		width: 560px;
+	}
+}

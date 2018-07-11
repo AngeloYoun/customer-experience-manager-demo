@@ -1,0 +1,23 @@
+.subscription-level-tag-container {
+	height: 12px;
+	width: 12px;
+
+	&.gold {
+		background: url($imageSubscriptionGoldIcon) 50% 50% no-repeat;
+		background-size: cover;
+	}
+
+	&.no-level {
+		display: none;
+	}
+
+	&.platinum {
+		background: url($imageSubscriptionPlatinumIcon) 50% 50% no-repeat;
+		background-size: cover;
+	}
+
+	&.silver {
+		background: url($imageSubscriptionSilverIcon) 50% 50% no-repeat;
+		background-size: cover;
+	}
+}

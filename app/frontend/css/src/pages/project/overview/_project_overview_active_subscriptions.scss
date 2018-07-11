@@ -1,0 +1,71 @@
+.project-overview-active-subscriptions-container {
+	.header, .info, .subscription-level, .subscription-price {
+		align-items: center;
+		display: flex;
+	}
+
+	.info {
+		display: flex;
+		flex-basis: 50%;
+		justify-content: flex-end;
+	}
+
+	.item-type {
+		font-weight: $fontWeightBlack;
+		letter-spacing: 0.06em;
+		margin-right: 16px;
+	}
+
+	.level {
+		margin-right: 8px;
+	}
+
+	.level-label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		margin-right: 16px;
+	}
+
+	.quantity {
+		color: $colorCoolGrey;
+		margin-right: 16px;
+		word-spacing: 8px;
+	}
+
+	.quantity-count {
+		color: $colorDarkNavy;
+	}
+
+	.sales-price, .total-price {
+		letter-spacing: 0.05em;
+	}
+
+	.sales-price {
+		margin-right: 8px;
+	}
+
+	.subscription {
+		display: flex;
+		height: 40px;
+		justify-content: space-between;
+		margin-bottom: 24px;
+	}
+
+	.subscription-term {
+		flex-basis: 168px;
+		margin-left: 56px;
+		text-align: right;
+	}
+
+	.term {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+		letter-spacing: 0.07em;
+	}
+
+	.term-left {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightBlack;
+		margin-bottom: 8px;
+	}
+}

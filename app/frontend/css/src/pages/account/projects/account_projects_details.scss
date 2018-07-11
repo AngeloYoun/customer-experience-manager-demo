@@ -1,0 +1,109 @@
+.account-projects-details-container {
+	.content-section {
+		display: flex;
+	}
+
+	.first-line-support {
+		background-color: $colorDeepBlue;
+		height: 24px;
+		margin-right: 16px;
+		padding: 0 8px;
+	}
+
+	.first-line-support-label {
+		color: $colorWhite;
+		font-weight: $fontWeightHeavy;
+		letter-spacing: 0.08em;
+		line-height: 24px;
+	}
+
+	.header, .project-details {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header {
+		flex: 0 1 auto;
+		width: 720px;
+	}
+
+	.label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		letter-spacing: 0.06em;
+	}
+
+	.liferay-features {
+		color: $colorMediumGrey;
+	}
+
+	.liferay-info {
+		display: flex;
+		margin-bottom: 24px;
+	}
+
+	.liferay-version {
+		font-weight: $fontWeightHeavy;
+		margin-right: 16px;
+	}
+
+	.meta-info {
+		align-items: center;
+		display: flex;
+	}
+
+	.project-description {
+		.info {
+			line-height: 1.8em;
+			white-space: pre-wrap;
+		}
+
+		.label {
+			margin-bottom: 16px;
+		}
+	}
+
+	.project-info, .technical-info {
+		display: flex;
+		flex: 0 0 auto;
+		justify-content: space-between;
+		margin-left: 88px;
+	}
+
+	.project-info {
+		margin-bottom: 40px;
+	}
+
+	.solution-type {
+		font-weight: $fontWeightBlack;
+		margin-bottom: 16px;
+	}
+
+	.subscription-term-left {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightBlack;
+		margin-top: 8px;
+	}
+
+	.technical-info {
+		flex-wrap: wrap;
+		max-width: 400px;
+
+		.info-item {
+			flex: 0 0 160px;
+			margin-bottom: 24px;
+		}
+
+		.label, .info {
+			font-weight: $fontWeightHeavy;
+		}
+
+		.label {
+			margin-bottom: 8px;
+		}
+	}
+
+	.title {
+		margin-bottom: 40px;
+	}
+}

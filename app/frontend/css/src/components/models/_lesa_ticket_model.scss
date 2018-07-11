@@ -1,0 +1,21 @@
+.account-activities-model-container {
+	.comment-marker {
+		display: flex;
+		align-items: center;
+
+		.label {
+			color: $colorDarkNavy;
+			margin-bottom: 4px;
+		}
+
+		.user-avatar {
+			height: 24px;
+			margin: -6px 4px 0;
+			width: 24px;
+
+			.avatar-content {
+				font-size: 12px;
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.dossiera-logo-icon, .dossiera-logo-white-icon {
+	height: 24px;
+	transform: translateZ(0);
+	transition: filter 0.15s ease-out;
+	width: 13px;
+}
+
+a {
+	.dossiera-logo-icon {
+		&:hover {
+			filter: drop-shadow(0 0 4px transparentize($colorDeepBlue, 0.4));
+		}
+	}
+
+	.dossiera-logo-white-icon {
+		&:hover {
+			filter: drop-shadow(0 0 4px transparentize($colorWhite, 0.5));
+		}
+	}
+}
+
+@keyframes centerFlip {
+	0% {
+		fill-opacity: 0.1;
+		transform: perspective(140px) rotateY(-91deg);
+		transform-origin: right;
+	}
+
+	10% {
+		fill-opacity: 1;
+		transform: perspective(140px) rotateY(0);
+	}
+
+	80% {
+		fill-opacity: 1;
+		transform: perspective(140px) rotateY(0);
+		transform-origin: left;
+	}
+
+	90% {
+		fill-opacity: 0.1;
+		transform: perspective(140px) rotateY(91deg);
+	}
+
+	91% {
+		fill-opacity: 0;
+	}
+
+	100% {
+		fill-opacity: 0;
+		transform: perspective(140px) rotateY(91deg);
+	}
+}
+
+@keyframes lowerFlip {
+	10% {
+		fill-opacity: 0.1;
+		transform: perspective(140px) rotateX(-181deg);
+	}
+
+	20% {
+		fill-opacity: 1;
+		transform: perspective(140px)  rotateX(0);
+	}
+
+	70% {
+		fill-opacity: 1;
+		transform: perspective(140px)  rotateX(0);
+	}
+
+	80% {
+		fill-opacity: 0.1;
+		transform: perspective(140px) rotateX(-181deg);
+	}
+}
+
+@keyframes upperFlip {
+	20% {
+		fill-opacity: 0.1;
+		transform: perspective(140px) rotateX(-181deg);
+	}
+
+	30% {
+		fill-opacity: 1;
+		transform: perspective(140px)  rotateX(0);
+	}
+
+	60% {
+		fill-opacity: 1;
+		transform: perspective(140px)  rotateX(0);
+	}
+
+	70% {
+		fill-opacity: 0.1;
+		transform: perspective(140px) rotateX(-181deg);
+	}
+}

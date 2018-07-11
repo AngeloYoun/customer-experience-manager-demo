@@ -1,0 +1,118 @@
+.page-header-container {
+	background-color: $colorWhite;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	height: $globalHeaderHeight;
+	padding: 16px $globalHorizontalMargin;
+	position: relative;
+	z-index: $zIndexAccountHeader;
+
+	&:not(.default) {
+		.path {
+			opacity: 0.7;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&.default {
+		.link {
+			opacity: 0.7;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		.location {
+			margin-bottom: 3px;
+		}
+
+		.secondary-info {
+			align-self: center;
+		}
+	}
+
+	.header-avatar {
+		margin-right: 16px;
+		height: 48px;
+		width: 48px;
+		border: 2px solid #D1E0E7;
+	}
+
+	.info {
+		color: $colorWhite;
+		line-height: 1.1em;
+	}
+
+	.info-item {
+		margin-left: 48px;
+	}
+
+	.label {
+		color: $colorCoolGrey;
+		display: block;
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 5px;
+	}
+
+	.page-header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title {
+		letter-spacing: 0;
+		font-weight: $fontWeightHeavy;
+		flex: 0 1 auto;
+		flex-direction: column;
+		justify-content: flex-end;
+		min-width: 6px;
+		overflow: hidden;
+		transition: flex-shrink 0.2s 0.2s ease-out, max-width 1.5s ease-in-out, opacity 0.15s ease-out;
+		margin-bottom: 8px;
+
+		&.no-label {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			flex-shrink: 0;
+		}
+	}
+
+	.location .label {
+		margin-bottom: 4px;
+	}
+
+	.location-name, .path-name {
+		color: $colorWhite;
+		font-weight: $fontWeightRegular;
+		line-height: 1.1em;
+
+		@include overflowEllipsis;
+	}
+
+	.logo {
+		align-self: center;
+		height: 24px;
+		margin-bottom: 2px;
+	}
+
+	.path {
+		max-width: 160px;
+
+		&:hover {
+			max-width: 100%;
+		}
+	}
+
+	.secondary-info {
+		display: flex;
+		flex: 0 0 auto;
+		margin-left: auto;
+	}
+}

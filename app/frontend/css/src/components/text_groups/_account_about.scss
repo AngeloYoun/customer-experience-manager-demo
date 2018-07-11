@@ -1,0 +1,20 @@
+.account-about-container {
+	width: auto;
+	overflow: hidden;
+
+	.label {
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 8px;
+	}
+
+	.field-group {
+		margin-bottom: 16px;
+	}
+
+	.description {
+		.value {
+			// @include mutliLineEllipsis(5)
+			@include mutliLineGradientOverflow(1.7, 5);
+		}
+	}
+}

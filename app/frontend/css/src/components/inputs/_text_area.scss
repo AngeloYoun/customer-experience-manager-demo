@@ -1,0 +1,20 @@
+.text-area-container {
+	background-color: transparent;
+	border: 1px solid $colorCoolGrey;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: $colorDarkNavy;
+	font-size: $fontSizeMedium;
+	height: 160px;
+	line-height: 1.5em;
+	resize: none;
+	padding: 8px;
+	width: 100%;
+
+	&:active, &:focus {
+		border-color: $colorDarkNavy;
+		color: $colorDarkNavy;
+		outline: none;
+		transition: border-color 0.15s ease-out;
+	}
+}

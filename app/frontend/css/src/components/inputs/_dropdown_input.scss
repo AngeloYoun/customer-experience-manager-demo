@@ -1,0 +1,51 @@
+.dropdown-input-container {
+	position: relative;
+    width: 200px;
+
+	.dropdown {
+		background-color: $colorWhite;
+		box-shadow: $boxShadowMedium;
+		border-radius: 0 0 4px 4px;
+		box-sizing: border-box;
+		padding: 16px;
+		position: absolute;
+		width: 100%;
+		z-index: $zIndexDropodown;
+	}
+
+	.dropdown-icon {
+		width: 8px;
+		height: 12px;
+		fill: $colorCoolGrey;
+		transition: fill 0.15s ease-out;
+	}
+
+	.label {
+		transition: color 0.15s ease-out;
+	}
+
+	.dropdown-toggle {
+		align-items: center;
+		border-radius: 4px;
+		border: 1px solid $colorCoolGrey;
+		box-sizing: border-box;
+		cursor: pointer;
+		display: flex;
+		height: 32px;
+		justify-content: space-between;
+		padding: 8px;
+		transition: border-color 0.15s ease-out;
+
+		&:hover, &.active {
+			border-color: $colorDarkNavy;
+
+			.label {
+				color: $colorDarkNavy;
+			}
+
+			.dropdown-icon {
+				fill: $colorDarkNavy;
+			}
+		}
+	}
+}

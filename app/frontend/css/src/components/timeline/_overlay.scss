@@ -1,0 +1,22 @@
+.overlay-container {
+	display: flex;
+	height: calc(100% - 48px);
+	position: absolute;
+	top: 0;
+	width: auto;
+
+	.overlay-section {
+		box-sizing: border-box;
+		cursor: pointer;
+		display: inline-block;
+		height: 100%;
+		position: relative;
+		transition: background-color 0.08s ease-out, box-shadow 0.05s ease-out;
+
+		&:hover {
+			border: 1px solid rgba($colorDarkNavy, 0.2);
+			border-width: 0 1px;
+			box-shadow: $boxShadowMedium;
+		}
+	}
+}

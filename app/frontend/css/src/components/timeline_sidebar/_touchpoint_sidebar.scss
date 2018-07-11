@@ -1,0 +1,31 @@
+.touchpoint-sidebar-container {
+	.event-name {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.session {
+		padding-bottom: 16px;
+
+		.label {
+			margin-bottom: 4px;
+		}
+	}
+
+	.session-name {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.attendee-label {
+		border-bottom: 1px solid transparentize($colorCoolGrey, 0.5);
+		margin-bottom: 16px;
+		padding-bottom: 8px;
+	}
+
+	.session-name {
+		margin-bottom: 16px;
+	}
+
+	.link-details .label {
+		margin-bottom: 8px;
+	}
+}

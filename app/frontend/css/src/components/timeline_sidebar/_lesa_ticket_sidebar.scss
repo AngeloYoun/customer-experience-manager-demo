@@ -1,0 +1,40 @@
+.lesa-ticket-sidebar-container {
+	.component {
+		color: $colorDarkNavy;
+	}
+
+	.closed-on {
+		margin-top: 8px;
+	}
+
+	.resolution {
+		@include statusColors(color);
+
+		font-weight: $fontWeightBlack;
+	}
+
+	.description {
+		color: $colorDarkNavy;
+		line-height: 1.6em;
+		margin-top: 16px;
+	}
+
+	.escalation {
+		color: $colorDarkNavy;
+	}
+
+	.id {
+		margin-right: 8px;
+	}
+
+	.closed-on, .reported-by {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+	}
+
+	.ticket-summary {
+		line-height: 1.3em;
+		font-weight: $fontWeightHeavy;
+		margin-top: 6px;
+	}
+}

@@ -1,0 +1,41 @@
+.axis-container {
+	.domain {
+		@include nestedTimelineTransition(d);
+
+		stroke: $colorDarkNavy;
+	}
+
+	.new-tick.tick {
+		animation: fadeIn 0.15s both ease-out;
+	}
+
+	.major-tick, .minor-tick {
+		line {
+			stroke: $colorDarkNavy;
+		}
+	}
+
+	.major-tick {
+		text {
+			fill: $colorDarkNavy;
+		}
+	}
+
+	.minor-tick {
+		text {
+			fill: $colorCoolGrey;
+			font-size: 12px;
+		}
+	}
+
+	.date-tick {
+		line {
+			stroke: $colorCoolGrey
+		}
+
+		text {
+			fill: $colorCoolGrey;
+			font-size: 12px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.account-overview-opportunity-owners-container {
+	.list-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.user-info-container:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.view-all-button {
+		height: 40px;
+	}
+}

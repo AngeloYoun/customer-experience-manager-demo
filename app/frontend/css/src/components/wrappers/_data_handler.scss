@@ -1,0 +1,23 @@
+.data-handler-container {
+	position: relative;
+
+	.data-status {
+		animation: fadeIn 0.1s ease-out;
+		bottom: 100%;
+		padding-bottom: 8px;
+		position: absolute;
+		right: 0;
+	}
+
+	.error-icon {
+		height: 12px;
+		margin-right: 4px;
+		width: 12px;
+	}
+
+	.non-blocking-error-message {
+		color: $colorNegativeRed;
+		cursor: pointer;
+		display: flex;
+	}
+}

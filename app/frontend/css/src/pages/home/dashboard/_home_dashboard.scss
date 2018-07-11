@@ -1,0 +1,13 @@
+.home-dashboard-container {
+	padding-top: 24px;
+	width: 100%;
+
+	.account-card-container, .opportunity-card-container, .project-card-container {
+		margin-bottom: 16px;
+	}
+
+	.home-dashboard-content {
+		width: 100%;
+		display: flex;
+	}
+}

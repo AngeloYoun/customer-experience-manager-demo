@@ -1,0 +1,35 @@
+.ticket-comments-container {
+	.comment-header {
+		display: flex;
+	}
+
+	.comment-body {
+		padding-top: 4px;
+	}
+
+	.comment-container {
+		display: flex;
+		margin-bottom: 24px;
+	}
+
+	.comment-author {
+		font-weight: $fontWeightHeavy;
+		color: $colorDarkNavy;
+	}
+
+	.comment-date {
+		margin-left: 8px;
+	}
+
+	.comment {
+		color: $colorDarkNavy;
+		line-height: 1.4em;
+		margin-top: 8px;
+		white-space: pre-line;
+	}
+
+	.avatar-container {
+		margin-right: 16px;
+		min-width: 32px;
+	}
+}

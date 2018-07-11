@@ -1,0 +1,31 @@
+.opportunity-line-container {
+	.opportunity-icon-container {
+		display: inline-block;
+		height: 21px;
+		width: 21px;
+		vertical-align: top;
+	}
+
+	.opportunity-line {
+		display: inline-block;
+		margin-left: 16px;
+		vertical-align: top;
+		white-space: normal;
+	}
+
+	.type {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.project {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.stage {
+		@include statusColors(color);
+
+		color: $colorOppStatusNeutral;
+		font-weight: $fontWeightHeavy;
+		text-transform: lowercase;
+	}
+}

@@ -1,0 +1,24 @@
+.multi-select-input-container {
+	.multi-select-input-group {
+		display: flex;
+		margin-bottom: 16px;
+	}
+
+	.close-button-container {
+		align-items: center;
+		margin-left: 16px;
+		border-width: 1px;
+		display: flex;
+		height: 32px;
+		width: 32px;
+	}
+
+	.add-input {
+		height: 40px;
+		width: 104px;
+	}
+
+	.options .selected.option {
+		display: none;
+	}
+}

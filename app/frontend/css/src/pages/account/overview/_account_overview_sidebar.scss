@@ -1,0 +1,72 @@
+.account-overview-sidebar-container {
+	margin: 24px;
+
+	.activity-point-container {
+		min-height: 24px;
+		min-width: 24px;
+		margin-right: 8px;
+		margin-top: 13px;
+	}
+
+	.close-button-container {
+		position: absolute;
+		right: 24px;
+		top: 24px;
+	}
+
+	.description {
+		color: $colorDarkNavy;
+		line-height: 1.5em;
+		word-wrap: break-word;
+		white-space: pre-wrap;
+	}
+
+	.header {
+		display: flex;
+		height: 78px;
+	}
+
+	.meta-info {
+		display: flex;
+		margin-top: 8px;
+	}
+
+	.inline-info-container {
+		margin-right: 8px;
+	}
+
+	.opportunity-type {
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 8px;
+	}
+
+	.project-name {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 4px;
+	}
+
+	.sold-by {
+		color: $colorDarkNavy;
+	}
+
+	.total-amount {
+		color: $colorDarkNavy;
+	}
+
+	.status {
+		@include statusColors(color);
+
+		font-weight: $fontWeightBlack;
+	}
+
+	.info {
+		box-sizing: border-box;
+		height: 352px;
+		margin: 0 -24px;
+		overflow: auto;
+		padding: 24px;
+
+		@include customScrollBar;
+	}
+}

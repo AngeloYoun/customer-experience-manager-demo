@@ -1,0 +1,100 @@
+@font-face {
+	font-family: 'Avenir';
+	font-weight: 200;
+	src: url(../font/avenir/avenir-light.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Avenir';
+	font-weight: 400;
+	src: url(../font/avenir/avenir-roman.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Avenir';
+	font-weight: 500;
+	src: url(../font/avenir/avenir-medium.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Avenir';
+	font-weight: 700;
+	src: url(../font/avenir/avenir-heavy.woff2) format('woff2');
+}
+
+body {
+	@include customScrollBar;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+
+	font-family: $fontFamilyPrimary;
+	margin: 0;
+}
+
+button, input[type=submit] {
+	background-color: transparent;
+	border: 1px solid $colorCoolGrey;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: $fontFamilyPrimary;
+
+	&:active, &:focus {
+		outline: none;
+	}
+
+	&:hover {
+		border-color: $colorDarkNavy;
+	}
+}
+
+input {
+	font-family: $fontFamilyPrimary;
+}
+
+a {
+	text-decoration: none;
+
+	&:active, &:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+h2, h3, h4, h5 {
+	font-weight: $fontWeightRegular;
+}
+
+h1, h2, h3 {
+	color: $colorDarkNavy;
+}
+
+h4, h5 {
+	color: $colorCoolGrey;
+}
+
+h1 {
+	font-size: $fontSizeXLarge;
+	font-weight: $fontWeightRegular;
+	line-height: 1.1em;
+}
+
+h2 {
+	font-size: $fontSizeLarge;
+}
+
+h3 {
+	font-size: $fontSizeMedium;
+}
+
+h4 {
+	font-size: $fontSizeSmall;
+	line-height: 1em;
+}
+
+h5 {
+	font-size: $fontSizeXSmall;
+	font-weight: $fontWeightHeavy;
+}

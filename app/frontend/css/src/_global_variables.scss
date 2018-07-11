@@ -1,0 +1,107 @@
+/* ---------- Box shadows ---------- */
+
+$boxShadowColor: transparentize(#015FB2, 0.9);
+$boxShadowMedium: 0 5px 9px 0 $boxShadowColor, 0 9px 1px -4px $boxShadowColor;
+$boxShadowRaised: 0 28px 3px -13px $boxShadowColor, 0 3px 14px 0 $boxShadowColor;
+
+/* ---------- Colors ---------- */
+
+$colorBrightBlue: #22CAFF;
+$colorCalmPurple: #7B9EFF;
+$colorCoolGrey: #A2C0CE;
+$colorCoolWhite: #F5FAFD;
+$colorDarkNavy: #5F6E84;
+$colorDeepBlue: #158AFF;
+$colorMediumGrey: #89A0AF;
+$colorNegativeRed: #FD696B;
+$colorNeutralLavendar: #7C95B9;
+$colorPositiveGreen: #00D4AF;
+$colorSubtleGrey: #E5F0F3;
+$colorWhite: #FFF;
+
+$colorOppStatusLost: $colorNegativeRed;
+$colorOppStatusNeutral: #BCC7DB;
+$colorOppStatusOpen: #FEBC6F;
+$colorOppStatusWon: $colorPositiveGreen;
+
+$colorLesaTicketCritical: #FF7F7F;
+$colorLesaTicketMajor: #9196FF;
+$colorLesaTicketMinor: #4AC3FF;
+
+$colorOppTypeExistingBusiness: #49CFC9;
+$colorOppTypeNewBusiness: #7AA8FB;
+$colorOppTypeNewProject: #BAA4FF;
+$colorOppTypeOther: #BCC7DB;
+$colorOppTypeProfessionalServices: #FF8CAD;
+$colorOppTypeRenewal: #5FC6FF;
+$colorOppTypeTraining: #EAA9E9;
+
+/* ---------- Content ---------- */
+
+$contentSectionMargin: 16px;
+
+/* ---------- Font family ---------- */
+
+$fontFamilyMonospace: 'Menlo', 'Courier New', 'Courier';
+$fontFamilyPrimary: 'Avenir', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+/* ---------- Font sizes ---------- */
+
+$fontSizeLarge: 16px;
+$fontSizeMedium: 14px;
+$fontSizeSmall: 12px;
+$fontSizeXLarge: 20px;
+$fontSizeXSmall: 10px;
+$fontSizeXXLarge: 32px;
+
+/* ---------- Font weights ---------- */
+
+$fontWeightBlack: 700;
+$fontWeightHeavy: 500;
+$fontWeightLight: 200;
+$fontWeightRegular: 400;
+
+/* ---------- Global ---------- */
+
+$globalHeaderHeight: 64px;
+$globalHorizontalMargin: 40px;
+$globalSidebarWidth: 56px;
+
+/* ---------- Gradients ---------- */
+
+$gradientDeepBlue: linear-gradient(-70deg, #79A8FF 0%, #5FB9FC 100%);
+
+/* ---------- Images ---------- */
+
+$imageAccountStageIcon: '../images/account_stage_icon.svg';
+$imageDossieraIcon: '../images/dossiera_icon.svg';
+$imageEmailIcon: '../images/email_icon.svg';
+$imageHubspotClickedIcon: '../images/hubspot_clicked_icon.svg';
+$imageHubspotIcon: '../images/hubspot_icon.svg';
+$imageHubspotOpenedIcon: '../images/hubspot_opened_icon.svg';
+$imageHubspotSentIcon: '../images/hubspot_sent_icon.svg';
+$imageHubspotSubmittedIcon: '../images/hubspot_submitted_icon.svg';
+$imageOpportunityCloseLostIcon: '../images/opportunity_close_lost_icon.svg';
+$imageOpportunityCloseWonIcon: '../images/opportunity_close_won_icon.svg';
+$imageOpportunityOpenIcon: '../images/opportunity_open_icon.svg';
+$imageSeachIcon: '../images/search_icon.svg';
+$imageSubscriptionGoldIcon: '../images/subscription_gold_icon.svg';
+$imageSubscriptionPlatinumIcon: '../images/subscription_platinum_icon.svg';
+$imageSubscriptionSilverIcon: '../images/subscription_silver_icon.svg';
+
+/* ---------- Transitions ---------- */
+
+$transitionCubicBezierSoft: cubic-bezier(0.65, 0.42, 0.29, 1.13);
+
+/* ---------- Z-Indicies ---------- */
+
+$zIndexBase: 0;
+$zIndexAccountHeader: 100;
+$zIndexAccountOverviewHistory: 500;
+$zIndexAccountOverviewTooltip: 800;
+$zIndexAccountOverviewSidebar: 900;
+$zIndexAlerts: 8000;
+$zIndexModal: 9000;
+$zIndexPageHeader: 300;
+$zIndexTooltip: 1000;
+$zIndexDropodown: 1000;

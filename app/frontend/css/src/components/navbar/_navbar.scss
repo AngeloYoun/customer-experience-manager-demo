@@ -1,0 +1,97 @@
+.navbar-container {
+	align-self: flex-end;
+	border-bottom: 1px solid transparentize($colorCoolGrey, 0.7);
+	box-sizing: border-box;
+	display: flex;
+	height: 48px;
+	padding: 0 $globalHorizontalMargin;
+	width: 100%;
+
+	&.vertical {
+		align-self: flex-start;
+		flex-direction: column;
+
+		.navbar-entry {
+			background-color: $colorCoolWhite;
+			border: 1px solid $colorSubtleGrey;
+			height: 72px;
+			margin: 0 0 24px;
+			transition: transform 0.08s ease-out, box-shadow 0.08s ease-out;
+			width: 160px;
+
+			&:hover, &.selected {
+				background-color: $colorWhite;
+
+				&:after {
+					content: none;
+				}
+			}
+
+			&:hover {
+				box-shadow: $boxShadowRaised;
+				transform: translateY(-2px);
+			}
+
+			&.selected {
+				box-shadow: $boxShadowMedium;
+
+				&:hover {
+					box-shadow: $boxShadowRaised;
+				}
+			}
+		}
+
+		.navbar-entry-link {
+			padding-left: 24px;
+		}
+	}
+
+	.navbar-entry {
+		align-items: center;
+		box-sizing: border-box;
+		font-weight: 600;
+		height: 100%;
+		margin: 0 64px 0 0;
+		position: relative;
+		transition: background-color 0.05s ease-out, border-color 0.1s ease-out;
+
+		&:hover {
+			.navbar-entry-label {
+				color: $colorDarkNavy;
+			}
+		}
+
+		&.selected {
+			.navbar-entry-label {
+				color: $colorDarkNavy;
+			}
+
+			&:after {
+				background-image: $gradientDeepBlue;
+				bottom: 0;
+				box-shadow: 0 2px 11px 0 rgba(38, 176, 255, 0.45);
+				content: '';
+				display: block;
+				height: 2px;
+				position: absolute;
+				width: 100%;
+			}
+		}
+	}
+
+	.navbar-entry-label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightRegular;
+		letter-spacing: 0;
+		text-align: center;
+		text-transform: capitalize;
+		vertical-align: middle;
+	}
+
+	.navbar-entry-link {
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		height: 100%;
+	}
+}

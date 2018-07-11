@@ -1,0 +1,28 @@
+.accounts-table-container {
+	margin-bottom: 16px;
+
+	.column-avatar {
+		width: 64px;
+	}
+
+	.header-avatar {
+		height: 44px;
+		width: 44px;
+		border: 2px solid $colorSubtleGrey;
+	}
+
+	.title {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 100%;
+	}
+
+	.account-name {
+		margin-bottom: 4px;
+	}
+
+	.column-name {
+		width: 60%;
+	}
+}

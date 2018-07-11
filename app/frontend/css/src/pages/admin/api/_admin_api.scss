@@ -1,0 +1,102 @@
+.admin-api-container {
+	.content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		padding: 24px 40px;
+	}
+
+	.action-button-container {
+		height: 32px;
+		width: 150px;
+	}
+
+	.controller-option {
+		text-transform: capitalize;
+	}
+
+	.send-request {
+		height: 40px;
+		margin-top: 24px;
+
+		&:not(.disabled) {
+			background-color: transparentize($colorDeepBlue, 0.15);
+			border-color: $colorDeepBlue;
+
+			.label {
+				color: $colorWhite;
+				letter-spacing: 0.02em;
+			}
+
+			&:hover {
+				background-color: $colorDeepBlue;
+			}
+		}
+	}
+
+	.select-input-container, .text-input-container {
+		margin-bottom: 24px;
+	}
+
+	.config {
+		width: 100%;
+		height: auto;
+	}
+
+	.parameter-error-message {
+		color: $colorNegativeRed;
+	}
+
+	.request-configurations {
+		flex-basis: 50%;
+		margin-right: 24px;
+	}
+
+	.results-container {
+		flex-basis: 50%;
+	}
+
+	.code-editor-container.no-value .CodeMirror {
+		height: 300px;
+	}
+
+	.modifier-select {
+		margin-bottom: 0;
+	}
+
+	.modifier-input {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: 16px 32px 16px 0;
+	}
+
+	.modifier-arguments {
+		width: 400px;
+
+		&.CodeMirror, &.no-value .CodeMirror {
+			height: 32px;
+		}
+	}
+
+	.close-button-container {
+		height: 32px;
+		width: 32px;
+		border: 1px solid $colorCoolGrey;
+		border-radius: 4px;
+		display: flex;
+	}
+
+	.CodeMirror {
+		// min-height: 300px;
+		height: auto;
+		overflow: hidden;
+		border-radius: 4px;
+		border: 1px solid $colorCoolGrey;
+	}
+
+	.section-label {
+		color: $colorCoolGrey;
+		margin-bottom: 8px;
+	}
+}

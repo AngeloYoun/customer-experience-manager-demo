@@ -1,0 +1,12 @@
+.year-filter-container {
+	display: flex;
+    flex-direction: column;
+	margin-top: 24px;
+
+	.toggle-button-container {
+		align-self: flex-end;
+		height: 32px;
+		margin-bottom: 16px;
+		width: 80px;
+	}
+}

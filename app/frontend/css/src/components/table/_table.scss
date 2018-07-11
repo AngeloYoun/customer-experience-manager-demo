@@ -1,0 +1,46 @@
+.table-container {
+	width: 100%;
+
+	.caret-down-icon, .caret-up-icon {
+		fill: $colorMediumGrey;
+		margin: 0 0 2px 5px;
+	}
+
+	.link {
+		display: flex;
+		padding: 18px $globalHorizontalMargin;
+	}
+
+	.table-cell, .table-head, .table-head-cell {
+		align-items: center;
+		display: flex;
+	}
+
+	.table-head {
+		background-color: $colorCoolWhite;
+		box-sizing: border-box;
+		height: 32px;
+		padding: 4px $globalHorizontalMargin;
+	}
+
+	.table-head-cell {
+		color: $colorMediumGrey;
+		cursor: default;
+		font-size: 12px;
+		line-height: 1em;
+
+		&.sortable {
+			cursor: pointer;
+		}
+	}
+
+	.table-row {
+		border-top: 1px solid $colorSubtleGrey;
+		transition: transform 0.08s ease-out, box-shadow 0.08s ease-out;
+
+		&:hover, &.selected {
+			box-shadow: $boxShadowRaised;
+			transform: translateY(-3px);
+		}
+	}
+}

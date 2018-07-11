@@ -1,0 +1,63 @@
+.modal-container {
+	$_zIndexBase: 0;
+	$_zIndexOverlay: 100;
+
+	align-items: flex-start;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: $zIndexModal;
+
+	.modal {
+		animation: fadeIn 0.1s ease-out both;
+		background-color: $colorWhite;
+		border-radius: 4px;
+		box-shadow: $boxShadowMedium;
+		height: auto;
+		margin-top: 80px;
+		z-index: $_zIndexOverlay;
+	}
+
+	.modal-header {
+		align-items: center;
+		border-bottom: 1px solid transparentize($colorCoolGrey, 0.5);
+		display: flex;
+		height: 56px;
+		justify-content: space-between;
+		padding: 0 40px;
+	}
+
+	.modal-header-icon {
+		align-items: center;
+		display: flex;
+		margin-right: 16px;
+		padding-bottom: 3px;
+	}
+
+	.modal-title {
+		align-items: center;
+		display: flex;
+		font-weight: $fontWeightHeavy;
+		justify-content: center;
+	}
+
+	.scrim {
+		animation: fadeIn 0.15s ease-out both;
+		background-color: rgba($colorDarkNavy, 0.5);
+		bottom: 0;
+		cursor: pointer;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		z-index: $_zIndexBase;
+
+		&.no-hide {
+			cursor: not-allowed;
+		}
+	}
+}

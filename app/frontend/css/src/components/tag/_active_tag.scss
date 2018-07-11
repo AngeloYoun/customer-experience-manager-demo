@@ -1,0 +1,23 @@
+.active-tag-container {
+	border-radius: 5px;
+	color: $colorWhite;
+	font-size: 0.9em;
+	font-weight: $fontWeightRegular;
+	padding: 2px 4px;
+	text-align: center;
+	width: 75px;
+
+	&.active {
+		background-color: $colorDeepBlue;
+		border-color: $colorDeepBlue;
+	}
+
+	&.inactive {
+		background-color: $colorMediumGrey;
+		border-color: $colorMediumGrey;
+
+		&.hide-inactive {
+			display: none;
+		}
+	}
+}

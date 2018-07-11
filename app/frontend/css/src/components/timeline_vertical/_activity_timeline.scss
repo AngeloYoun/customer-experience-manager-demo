@@ -1,0 +1,16 @@
+.activity-timeline-container {
+	$_zIndexUnderlay: -1;
+
+	@include newStackingContext;
+	display: flex;
+
+	&:before {
+		border-left: solid 2px transparentize($colorCoolGrey, 0.5);
+		bottom: 24px;
+		content: '';
+		left: 25px;
+		position: absolute;
+		top: 48px;
+		z-index: $_zIndexUnderlay;
+	}
+}

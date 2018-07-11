@@ -1,0 +1,45 @@
+.checkbox-container {
+    align-items: center;
+	cursor: pointer;
+	display: flex;
+
+	.checkbox {
+		height: 16px;
+		width: 16px;
+		border: 1px solid $colorCoolGrey;
+		border-radius: 4px;
+		margin-right: 8px;
+
+		&.active .checkmark polyline {
+			stroke-dashoffset: 0;
+		}
+
+		&.inactive .checkmark polyline {
+			stroke-dashoffset: 20;
+		}
+	}
+
+	.checkmark {
+		height: 16px;
+		width: 16px;
+
+		polyline {
+			stroke: $colorCoolGrey;
+			stroke-dasharray: 20;
+			transition: stroke-dashoffset 0.2s ease-out;
+		}
+	}
+
+	.icon {
+		height: 20px;
+		width: 20px;
+		margin-right: 8px;
+	}
+
+	.label {
+		display: flex;
+		align-items: center;
+		color: $colorDarkNavy;
+		font-weight: $fontWeightRegular;
+	}
+}

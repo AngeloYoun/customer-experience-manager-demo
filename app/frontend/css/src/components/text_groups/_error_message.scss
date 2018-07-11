@@ -1,0 +1,23 @@
+.error-message-container {
+	&.placeholder-message-container {
+		flex-direction: column;
+	}
+
+	.action-button-container {
+		height: 40px;
+		width: 120px;
+	}
+
+	.error-message {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 16px;
+		text-align: center;
+	}
+
+	.sorry {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 8px;
+	}
+}

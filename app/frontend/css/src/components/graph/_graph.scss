@@ -1,0 +1,80 @@
+.transition-in .graph-container {
+	.past-group, .projected-group {
+		&:not(.vis-fill) {
+			animation: fadeIn 0.2s 0.3s ease-out both;
+		}
+
+		&.vis-fill {
+			animation: scaleUpY 0.3s ease-out both;
+		}
+	}
+}
+
+.graph-container {
+	$_bottomAxisHeight: 48px;
+	$_zIndexOverlay: 200;
+
+	bottom: $_bottomAxisHeight;
+	height: auto;
+	overflow: hidden;
+	padding-top: 24px;
+	position: absolute;
+	width: 100%;
+
+	.past-group, .projected-group {
+		stroke: rgba($colorBrightBlue, 0.8);
+		stroke-width: 1px;
+		transform-origin: 0 100%;
+
+		&:not(.vis-fill) {
+			fill: transparent;
+		}
+
+		&.vis-fill {
+			fill: transparentize($colorBrightBlue, 0.92);
+			stroke-width: 0;
+		}
+
+		&.vis-point {
+			fill: $colorBrightBlue;
+			fill-opacity: 0;
+			r: 0;
+			stroke: $colorBrightBlue;
+			stroke-width: 0;
+		}
+	}
+
+	.projected-group {
+		&:not(.vis-point) {
+			stroke-dasharray: 12, 8;
+		}
+	}
+
+	.revenue-label {
+		fill: $colorCoolGrey;
+		font-size: $fontSizeSmall;
+		font-weight: $fontWeightHeavy;
+	}
+
+	.vis-background {
+		display: none;
+	}
+
+	.vis-fill {
+		fill-opacity: 0.5;
+	}
+
+	.vis-panel.vis-center {
+		border-width: 0;
+		overflow: visible;
+
+		.vis-line-graph svg {
+			overflow: visible;
+		}
+	}
+
+	.vis-timeline {
+		border-width: 0;
+		overflow: visible;
+	}
+}

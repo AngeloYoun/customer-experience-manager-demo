@@ -1,0 +1,96 @@
+{
+  "babel": {
+    "presets": [
+      "metal-jsx"
+    ]
+  },
+  "csfConfig": {
+    "js": {
+      "lint": {
+        "globals": {
+          "RC": true
+        },
+        "rules": {
+          "csf-sort-props": [
+            2,
+            {
+              "casesensitive": true
+            }
+          ],
+          "no-unknown-property": 0
+        }
+      }
+    },
+    "path:**/{js/src/**/*,webpack.config.js}": {
+      "js": {
+        "lint": {
+          "parserOptions": {
+            "ecmaVersion": 7
+          }
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "ace-code-editor": "^1.2.3",
+    "air-datepicker": "^2.2.3",
+    "apollo-boost": "^0.1.10",
+    "apollo-link-http": "^1.5.4",
+    "body-parser": "^1.18.2",
+    "codemirror": "^5.28.0",
+    "cross-env": "^3.1.4",
+    "d3": "^4.10.0",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.13.2",
+    "graphql-server-express": "^1.3.6",
+    "graphql-tag": "^2.9.2",
+    "graphql-tools": "^3.0.2",
+    "highlight.js": "^9.12.0",
+    "immutable": "^v4.0.0-rc.2",
+    "isomorphic-fetch": "2.2.1",
+    "jquery": "^3.2.1",
+    "lodash": "4.17.4",
+    "metal-jsx": "^2.9.0",
+    "metal-redux": "^2.0.0",
+    "metal-router": "^3.0.7",
+    "moment": "^2.15.1",
+    "mysql2": "^1.4.2",
+    "node-sass": "^4.5.3",
+    "normalizr": "2.3.1",
+    "prismjs": "^1.6.0",
+    "redux": "3.6.0",
+    "redux-immutable": "3.0.9",
+    "redux-thunk": "2.1.0",
+    "request-promise": "^4.2.1",
+    "sequelize": "^4.15.0",
+    "vis": "AngeloYoun/vis#4.18.1-custom.2",
+    "wedeploy": "^2.3.1"
+  },
+  "description": "Dossiera Demo",
+  "devDependencies": {
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-metal-jsx": "^0.1.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "homepage": "https://github.com/liferay/liferay-plugins-ee",
+  "main": "/frontend/js/src/main.js",
+  "name": "liferay-dossiera-demo",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liferay/liferay-portal.git"
+  },
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "buildcss": "node-sass -w -o frontend/css/dist/ frontend/css/src/main.css",
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "node app",
+    "watch": "cross-env NODE_ENV=development webpack --watch"
+  },
+  "version": "1.0.0"
+}

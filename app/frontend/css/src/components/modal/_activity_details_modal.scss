@@ -1,0 +1,61 @@
+.activity-details-modal-container {
+	display: flex;
+	position: relative;
+
+	.activity-description {
+		line-height: 1.3em;
+		white-space: pre-line;
+	}
+
+	.assigned-to .label {
+		margin-bottom: 16px;
+	}
+
+	.contact-email {
+		color: $colorCoolGrey;
+		margin-top: 2px;
+	}
+
+	.fixed-info {
+		left: 60%;
+		position: absolute;
+		top: 40px;
+	}
+
+	.info-item {
+		margin-bottom: 32px;
+	}
+
+	.label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		line-height: 1.1em;
+	}
+
+	.link-label {
+		color: transparentize($colorDeepBlue, 0.3);
+		font-weight: $fontWeightHeavy;
+		transition: color 0.1s ease-out;
+	}
+
+	.link-to-salesforce {
+		align-items: center;
+		display: flex;
+
+		&:hover .link-label {
+			color: $colorDeepBlue;
+		}
+	}
+
+	.scrolling-container {
+		box-sizing: border-box;
+		height: 70vh;
+		overflow: auto;
+		padding: 40px;
+		width: calc(100vw - 80px);
+	}
+
+	.scrolling-content {
+		max-width: 50%;
+	}
+}

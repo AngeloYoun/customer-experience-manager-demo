@@ -1,0 +1,50 @@
+.dossiera-loading-spinner {
+	animation: fadeIn 0.1s ease-out;
+	border-radius: 50%;
+	box-shadow: inset 0 0 1px 2px $colorCoolGrey;
+	height: 24px;
+	position: relative;
+	width: 24px;
+
+	.spinner {
+		border: 2px solid transparent;
+		border-radius: 100%;
+		box-sizing: border-box;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+	}
+
+	.spinner-base {
+		border-color: #E2EDFF;
+	}
+
+	.spinner-blue {
+		animation: loadingSpinner 0.8s -0.5s infinite cubic-bezier(0.26, 0.6, 0.5, 0.26);
+		border-color: rgb(113, 205, 255) #579CFF transparent transparent;
+	}
+
+	.spinner-purple {
+		animation: loadingSpinner 0.8s -0.09s infinite cubic-bezier(0.26, 0.5, 0.6, 0.26);
+		border-color: transparent transparent rgba(200, 166, 255, 0.6) transparent;
+	}
+}
+
+.small > .dossiera-loading-spinner {
+	height: 16px;
+	width: 16px;
+
+	.spinner {
+		border-width: 2px;
+	}
+}
+
+@keyframes loadingSpinner {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

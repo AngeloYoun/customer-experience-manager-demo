@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/activitiy-hubspot/download</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/activitiy-hubspot/download">
+            <g id="hubspot">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="tint/event-hubspot" mask="url(#mask-2)" fill="#FF9B61">
+                    <rect id="Rectangle-3" x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+            <path d="M7,16.5782793 L17,16.5782793 L17,18 L7,18 L7,16.5782793 Z M17,10.2313117 L12,15.1565585 L7,10.2313117 L9.85223368,10.2313117 L9.85223368,6 L14.1477663,6 L14.1477663,10.2313117 L17,10.2313117 Z" id="file_download---material" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

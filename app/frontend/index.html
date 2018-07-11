@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/css/dist/main.css">
+		<link rel="icon" href="/images/dossiera-logo-icon.png">
+	</head>
+
+	<script type="text/javascript">
+		var Liferay = {};
+	</script>
+
+	<body>
+		<div id="app" class="app">
+			<!--  -->
+		</div>
+	</body>
+</html>
+<script src="/js/dist/bundle.nocsf.js"></script>
+
+<script type="text/javascript">
+	var urlPrefix = window.location.hostname === 'localhost' ? 'http://' : 'https://';
+
+	var hostURL = urlPrefix + window.location.host;
+
+	window.Dossiera.userEmail = 'brian.kim@liferay.com'
+
+	window.Dossiera.URLS = {
+		API_URL: hostURL + '/api/',
+		IMAGES_URL: hostURL + '/osb-dossiera-metal-portlet/images/',
+		LAYOUT_URL: hostURL,
+		LOGIN_URL: '<%= portletURL.toString() %>',
+		LOGOUT_URL: hostURL + '/c/portal/logout',
+		LOOP_URL: '<%= PortletPropsValues.LOOP_URL %>',
+		HOST_URL: hostURL
+	};
+
+	window.Dossiera.run(
+		{},
+		'app'
+	);
+</script>

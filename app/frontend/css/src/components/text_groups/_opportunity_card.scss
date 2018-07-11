@@ -1,0 +1,48 @@
+.opportunity-card-container {
+	align-items: flex-start;
+	border: 1px solid transparentize($colorCoolGrey, 0.5);
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 16px;
+	transition: border-color 0.25s ease-out;
+	width: 100%;
+
+	&:hover {
+		border-color: $colorDarkNavy;
+	}
+
+	.amount {
+		color: $colorDarkNavy;
+	}
+
+	.closing-in {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.name {
+		display: flex;
+		font-weight: $fontWeightHeavy;
+		margin-bottom: 8px;
+	}
+
+	.opportunity-path {
+		margin-bottom: 8px;
+
+		.account, .project {
+			color: transparentize($colorDeepBlue, 0.3);
+			transition: color 0.1s ease-out;
+
+			&:hover {
+				color: $colorDeepBlue;
+			}
+		}
+	}
+
+	.opportunity-icon-container {
+		height: 16px;
+		margin-left: 8px;
+		width: 16px;
+	}
+}

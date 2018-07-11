@@ -1,0 +1,130 @@
+.opportunity-summary-container {
+	.close-date {
+		font-weight: $fontWeightBlack;
+	}
+
+	.line-items-header {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 32px;
+		padding-top: 16px;
+	}
+
+	.label {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		margin-right: 8px;
+	}
+
+	.line-item {
+		align-items: flex-start;
+		display: flex;
+		margin-bottom: 8px;
+	}
+
+	.line-item-price, .line-item-product-name, .line-item-quantity {
+		line-height: 1.6em;
+	}
+
+	.line-item-price {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+		margin-left: auto;
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	.line-item-product-name {
+		color: $colorDarkNavy;
+		margin-right: 16px;
+	}
+
+	.line-item-quantity {
+		color: $colorCoolGrey;
+		margin-right: 8px;
+		white-space: nowrap;
+	}
+
+	.line-item-quantity-count {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+	}
+
+	.opportunity-amount {
+		font-weight: $fontWeightBlack;
+		letter-spacing: 0.08em;
+	}
+
+	.opportunity-name {
+		color: $colorCoolGrey;
+		font-weight: $fontWeightHeavy;
+		line-height: 1em;
+	}
+
+	.opportunity-stage {
+		font-weight: $fontWeightBlack;
+		line-height: 1em;
+		margin-right: 4px;
+
+		&.lost {
+			color: $colorOppStatusLost;
+		}
+
+		&.neutral {
+			color: $colorOppStatusNeutral;
+		}
+
+		&.open {
+			color: $colorOppStatusOpen;
+		}
+
+		&.won {
+			color: $colorOppStatusWon;
+		}
+	}
+
+	.opportunity-status {
+		align-items: center;
+		display: flex;
+		margin-bottom: 32px;
+	}
+
+	.opportunity-type {
+		font-weight: $fontWeightBlack;
+		margin-bottom: 8px;
+	}
+
+	.sold-by {
+		color: $colorMediumGrey;
+		font-weight: 600;
+	}
+
+	.subscription-group-header {
+		align-items: center;
+		display: flex;
+		margin-bottom: 16px;
+
+		&:not(:first-child) {
+			margin-top: 24px;
+		}
+	}
+
+	.subscription-length, .subscription-term {
+		font-weight: $fontWeightHeavy;
+	}
+
+	.subscription-length {
+		line-height: 1em;
+		margin-right: 8px;
+	}
+
+	.title {
+		margin-bottom: 16px;
+	}
+
+	.value {
+		color: $colorDarkNavy;
+		font-weight: $fontWeightHeavy;
+	}
+}

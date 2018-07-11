@@ -1,0 +1,39 @@
+.text-input-container {
+	&.large .text-input {
+		height: 40px;
+	}
+
+	&.invalid {
+		.text-input {
+			border-color: transparentize($colorNegativeRed, 0.3);
+
+			&:active, &:focus {
+				border-color: $colorNegativeRed;
+			}
+		}
+	}
+
+	.text-input {
+		background-color: transparent;
+		border: 1px solid $colorCoolGrey;
+		border-radius: 4px;
+		box-sizing: border-box;
+		color: $colorDarkNavy;
+		font-size: $fontSizeMedium;
+		height: 32px;
+		min-width: 120px;
+		padding: 0 8px;
+		width: 200px;
+
+		&:active, &:focus {
+			border-color: $colorDarkNavy;
+			color: $colorDarkNavy;
+			outline: none;
+			transition: border-color 0.15s ease-out;
+		}
+
+		@include placeholder {
+			color: transparentize($colorCoolGrey, 0.3);
+		}
+	}
+}
